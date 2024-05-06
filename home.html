@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Rent property</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="matser.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="color">
         <section class="header">
             <nav>
+                <!-- <div class="logo"><img src="images/symbol.jpeg"></div> -->
+
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="home.html">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="">TESTIMONIALS</a></li>
-                        <li><a href="">CONTACT</a></li>
+                        <li><a href="#moreinfo">ABOUT</a></li>
+                        <li><a href="#testimonial">TESTIMONIALS</a></li>
+                        <li><a href="#contactus">CONTACT</a></li>
                         <li><a href="sign.html">Login|Register</a></li>
                     </ul>
                 </div>
@@ -36,7 +43,7 @@
         </section>
     </div>
     <!--call to action-->
-    <Section class="about">
+    <Section id="moreinfo" class="about">
         <h1>Welcome to Nyumbani</h1>
         <hr>
         <P>Welcome to Nyumbani, where we turn dreams of finding the perfect home or commercial space into reality.
@@ -161,17 +168,18 @@
     -->
 
     <!--testimonials-->
-    <section class="testimonials">
+    <section id="testimonial" class="testimonials">
         <h1>Testimonials</h1>
         <hr>
         <p>Here's what some of our users had to say;</p>
 
         <div class="row">
             <div class="testimonial-col">
-                <img src="images/download (1).png">
+                <img src="images/face.jpg">
                 <div>
                     <p>The site is a great help espcially if you are busy with
-                        a lot of things
+                        a lot of things,you can easily view property without having to visit the actual locations.The
+                        images provided are good enough.
                     </p>
                     <h3>Karen Nandi</h3>
                     <i class="fa fa-star"></i>
@@ -183,9 +191,9 @@
 
             </div>
             <div class="testimonial-col">
-                <img src="images/download.png">
+                <img src="images/face.jpg">
                 <div>
-                    <p> Great site it was easy to navigate</p>
+                    <p> Great site, it was easy to navigate and the properies are legit.</p>
                     <h3>Dina Nandi</h3>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -196,10 +204,10 @@
 
             </div>
             <div class="testimonial-col">
-                <img src="images/download.png">
+                <img src="images/profile.png">
                 <div>
-                    <p></p>
-                    <h3>Dina Nandi</h3>
+                    <p>Wow! great,is easy to use and helpful.saved me a lot of time. Would definitely recommend.</p>
+                    <h3>unkown</h3>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -209,10 +217,11 @@
 
             </div>
             <div class="testimonial-col">
-                <img src="images/download.png">
+                <img src="images/face.jpg">
                 <div>
-                    <p></p>
-                    <h3>Dina Nandi</h3>
+                    <p>Gtreat platform to advertise property,registration process is easy and quick and the charges are
+                        fair.</p>
+                    <h3>Unkown</h3>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -255,7 +264,7 @@
             </div>
             
         </section>-->
-    <footer>
+    <footer id="contactus">
         <div class="rowe">
             <div class="col">
                 <img src="images/logo.jpg" class="logo">

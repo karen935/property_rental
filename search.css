@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: nunito;
 }
 
 body {
@@ -86,7 +87,7 @@ form .field {
     height: 50px;
     width: 30%;
     font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: nunito;
     padding: 0 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
