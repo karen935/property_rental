@@ -81,7 +81,7 @@ nav .fa {
 
 }
 
-form {}
+
 
 form .field {
     height: 50px;
@@ -89,14 +89,31 @@ form .field {
     font-size: 18px;
     font-family: nunito;
     padding: 0 10px;
-    border-radius: 5px;
+    border-radius: 2px;
     border: 1px solid #ccc;
     outline: none;
 }
 
+form .button {
+    height: 50px;
+    width: 10%;
+    font-size: 18px;
+    font-family: nunito;
+    padding: 0 10px;
+    background-color: #accaf1;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all .3s;
+}
+
+.button:hover {
+    opacity: 0.82;
+}
+
 button {
     height: 35px;
-    background: rgb(56, 125, 216);
+    background: rgb(97, 153, 225);
     border: 0;
     border-radius: 5px;
     color: #ccc;
