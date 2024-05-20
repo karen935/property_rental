@@ -77,32 +77,48 @@ nav .fa {
     margin: 50px;
     padding-left: 80px;
     font-size: 80px;
-    color: whitesmoke;
+    color: rgb(253, 253, 253);
+    font-family: monospace;
 
 }
 
-
+.text-box p {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 form .field {
     height: 50px;
     width: 30%;
-    font-size: 18px;
-    font-family: nunito;
+    font-size: 15px;
+    font-family: monospace;
     padding: 0 10px;
     border-radius: 2px;
     border: 1px solid #ccc;
     outline: none;
 }
 
+form .fieldplaceholder {
+    margin-left: 100px;
+}
+
+.icon {
+    position: absolute;
+    top: 490px;
+    display: flex;
+    font-size: 20px;
+    color: #accaf1;
+}
+
 form .button {
-    height: 50px;
+    height: 38px;
     width: 10%;
-    font-size: 18px;
-    font-family: nunito;
+    font-size: 15px;
+    color: #343434;
+    /* font-family: monospace; */
     padding: 0 10px;
-    background-color: #accaf1;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    background: rgb(97, 153, 225);
+    border-radius: 2px;
+    border: 1px solid #adadad;
     outline: none;
     transition: all .3s;
 }
@@ -113,10 +129,11 @@ form .button {
 
 button {
     height: 35px;
+    width: 10%;
     background: rgb(97, 153, 225);
     border: 0;
-    border-radius: 5px;
-    color: #ccc;
+    border-radius: 2px;
+    color: #343434;
     font-size: 15px;
     cursor: pointer;
     transition: all .3s;
@@ -138,6 +155,11 @@ button:hover {
 
 span {
     color: #accaf1;
+}
+
+span.price {
+    font-size: 30px;
+    color: #333;
 }
 
 @media (max-width:700px) {
@@ -225,13 +247,8 @@ h1:hover::after {
     padding: 16px;
 }
 
-.card-content h3 {
-    font-size: 28px;
-    margin-bottom: 8px;
-}
-
 .card-content p {
-    color: #666;
+    color: #494949;
     font-size: 15px;
     line-height: 1.3;
 }

@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="matser.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -32,8 +36,19 @@
             <button>Residential</button>
             <button>Commercial</button>
             <form action="" method="get">
+
                 <input class="field" type="text" name="location" placeholder="Enter location">
-                <input class="field" type="text" name="All Rooms" placeholder="All Rooms">
+                <div class="icon"><i class="fa-solid fa-map-pin"></i></div>
+                <input class="field" list="rooms" name="rooms" placeholder="All Rooms">
+                <datalist id="rooms">
+                    <option value="1 bedroom">
+                    <option value="2 bedrooms">
+                    <option value="3 bedrooms">
+                    <option value="4 bedrooms">
+                    <option value="5 bedrooms">
+                    <option value="servant Quaters">
+                    <option value="bedsitter/studio appartment">
+                </datalist>
                 <input class="field" type="" name="pricing" placeholder="Max Price">
                 <input class="button" type="submit" name="submit" value="Search">
             </form>
@@ -46,13 +61,12 @@
         <div class="card">
             <img src="images/syoks.jpeg" alt="">
             <div class="card-content">
-                <p>Ksh
-                <h3>30,000</h3>/per month</p>
-                <p><span class="material-symbols-outlined">
-                        pin_drop
-                    </span>Ngo'ng road</p>
-                <p>1bedroom</p>
-                <p> building is close to Junction Mall. An advantage is that it is close to the main road and only
+                <p>Ksh<span class="price">30,000</span> </p>
+                <p>/per month</p><br>
+                <p><i class="fa-solid fa-map-pin"></i> Ngo'ng road</p>
+                <p><i class="fa-solid fa-door-open"></i>2 bedroom</p>
+                <br>
+                <p>The building is close to Junction Mall. An advantage is that it is close to the main road and only
                     20mins away from the CBD</p>
                 <a href="" class="btn">Read more</a>
             </div>
@@ -60,13 +74,12 @@
         <div class="card">
             <img src="images/syoks2.jpeg" alt="">
             <div class="card-content">
-                <p>Ksh
-                <h3>40,000</h3>/per month</p>
-                <p><span class="material-symbols-outlined">
-                        pin_drop
-                    </span>Ngo'ng road</p>
-                <p>1bedroom</p>
-                <p> building is close to Junction Mall. An advantage is that it is close to the main road and only
+                <p>Ksh<span class="price">40,000</span> </p>
+                <p>/per month</p><br>
+                <p><i class="fa-solid fa-map-pin"></i> Ngo'ng road</p>
+                <p><i class="fa-solid fa-door-open"></i>2 bedroom</p>
+                <br>
+                <p>The building is close to Junction Mall. An advantage is that it is close to the main road and only
                     20mins away from the CBD</p>
                 <a href="" class="btn">Read more</a>
             </div>
@@ -74,13 +87,12 @@
         <div class="card">
             <img src="images/kinyanjui.jpeg" alt="">
             <div class="card-content">
-                <p>Ksh
-                <h3>60,000</h3>/per month</p>
-                <p><span class="material-symbols-outlined">
-                        pin_drop
-                    </span>Ngo'ng road</p>
-                <p>1bedroom</p>
-                <p> building is close to Junction Mall. An advantage is that it is close to the main road and only
+                <p>Ksh<span class="price">60,000</span> </p>
+                <p>/per month</p><br>
+                <p><i class="fa-solid fa-map-pin"></i> Ngo'ng road</p>
+                <p><i class="fa-solid fa-door-open"></i> 4bedroom</p>
+                <br>
+                <p>The building is close to Junction Mall. An advantage is that it is close to the main road and only
                     20mins away from the CBD</p>
                 <a href="" class="btn">Read more</a>
             </div>
@@ -88,13 +100,12 @@
         <div class="card">
             <img src="images/junction.jpeg" alt="">
             <div class="card-content">
-                <p>Ksh
-                <h3>25,000</h3>/per month</p>
-                <p><span class="material-symbols-outlined">
-                        pin_drop
-                    </span>Ngo'ng road</p>
-                <p>1bedroom</p>
-                <p> building is close to Junction Mall. An advantage is that it is close to the main road and only
+                <p>Ksh<span class="price">25,000</span> </p>
+                <p>/per month</p><br>
+                <p><i class="fa-solid fa-map-pin"></i> Ngo'ng road</p>
+                <p><i class="fa-solid fa-door-open"></i> 1bedroom</p>
+                <br>
+                <p>The building is close to Junction Mall. An advantage is that it is close to the main road and only
                     20mins away from the CBD</p>
                 <a href="" class="btn">Read more</a>
             </div>
@@ -105,10 +116,12 @@
         <div class="card">
             <img src="images/Mirage.jpg" alt="">
             <div class="card-content">
-                <p>Ksh
-                <h3>25,000</h3>/per month</p>
-                <p>Office space available at The Mirage!
-                    The building is close to Villa Rose Kempinski hotel,Standard Chartered bank head office, Cfc
+                <p>Ksh<span class="price">30,000</span> </p>
+                <p>/per month</p><br>
+                <p><i class="fa-solid fa-map-pin"></i> Ngo'ng road</p>
+                <br>
+                <p>Office space available at the Mirage!
+                    The building is close to Villa Rose Kempinski hotel, Standard Chartered bank head office, Cfc
                     Stanbic bank head office, African union offices and new ICEA building.</p>
                 <a href="" class="btn">Read more</a>
             </div>
@@ -116,8 +129,10 @@
         <div class="card">
             <img src="images/ngara.jpeg" alt="">
             <div class="card-content">
-                <p>Ksh
-                <h3>20,000</h3>/per month</p>
+                <p>Ksh<span class="price">30,000</span> </p>
+                <p>/per month</p><br>
+                <p><i class="fa-solid fa-map-pin"></i> Ngara</p>
+                <br>
                 <p>Office space available in Ngara!
                     The building is close to Villa Rose Kempinski hotel, Standard Chartered bank head office, Cfc
                     Stanbic bank head office, African union offices and new ICEA building.</p>
@@ -127,11 +142,12 @@
         <div class="card">
             <img src="images/cbd.jpeg" alt="">
             <div class="card-content">
-                <p>Ksh
-                <h3>28,000</h3>/per month</p>
-                <p>Office space available in the CBD!
-                    The building is located in the heart of the city,the cbd close to Standard Chartered bank head
-                    office, Cfc
+                <p>Ksh<span class="price">28,000</span> </p>
+                <p>/per month</p><br>
+                <p><i class="fa-solid fa-map-pin"></i> cbd</p>
+                <br>
+                <p>Office space available in the heart of cbd!
+                    The building is close to Villa Rose Kempinski hotel, Standard Chartered bank head office, Cfc
                     Stanbic bank head office, African union offices and new ICEA building.</p>
                 <a href="" class="btn">Read more</a>
             </div>
@@ -139,11 +155,12 @@
         <div class="card">
             <img src="images/coral.jpeg" alt="">
             <div class="card-content">
-                <p>Ksh
-                <h3>40,000</h3>/per month</p>
+                <p>Ksh<span class="price">40,000</span> </p>
+                <p>/per month</p><br>
+                <p><i class="fa-solid fa-map-pin"></i> Westlands</p>
+                <br>
                 <p>Office space available in Westlands!
-                    The building is located in the heart of the city,the cbd close to Standard Chartered bank head
-                    office, Cfc
+                    The building is close to Villa Rose Kempinski hotel, Standard Chartered bank head office, Cfc
                     Stanbic bank head office, African union offices and new ICEA building.</p>
                 <a href="" class="btn">Read more</a>
             </div>
